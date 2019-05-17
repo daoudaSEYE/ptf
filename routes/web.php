@@ -69,16 +69,16 @@ Route::get('/listing', 'listingController@index');
 Route::resource('listing', 'listingController');
 
 //OFFRE ROUTES
-$URI=$_SERVER["REQUEST_URI"];
-$explodeURI1=explode("/", $URI);
-$params=$explodeURI1[1];
-$explodeURI2=explode("-", $params);
-if($explodeURI2[0] === "Ref"){
+// $URI=$_SERVER["REQUEST_URI"];
+// $explodeURI1=explode("/", $URI);
+// $params=$explodeURI1[1];
+// $explodeURI2=explode("-", $params);
+// if($explodeURI2[0] === "Ref"){
 	// var_dump($explodeURI2[0]);
-	Route::get('/{id?}', 'offresController@offre');	
-}else{
-	Route::get('/{id?}', 'offresController@searchByPlace');
-}
+	// Route::get('/{id?}', 'offresController@offre');	
+// }else{
+	// Route::get('/{id?}', 'offresController@searchByPlace');
+// }
 
 
 //SEARCH ROUTES
