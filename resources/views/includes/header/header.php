@@ -43,7 +43,7 @@
 						</div>
 						<ul class="main-menu">
 							<li><a href="/">Acceuil</a></li>
-							<li><a href="/location">Location</a></li>
+							<li><a href="{{ url('/location') }}">Location</a></li>
 							<li><a href="/vente">vente</a></li>
 							<li><a href="/service">service</a></li>
 							<li><a href="/a-propos">A propos</a></li>
